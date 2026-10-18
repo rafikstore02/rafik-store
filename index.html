@@ -38,7 +38,7 @@
       <p class="demo-notice" data-i18n="demoNotice">ملاحظة: الأثمنة والمخزون المعروضين تجريبيين فقط، وما كيمثلوش عرض بيع حقيقي.</p>
     </section>
 
-    <section class="promo section-wrap" id="about"><div class="promo-icon">RS<span>✳</span></div><div><p class="eyebrow"><span></span><span data-i18n="aboutLabel">علاش RAFIK STORE؟</span></p><h2 data-i18n="aboutTitle">ستايل واضح. طلب بسيط.</h2><p data-i18n="aboutCopy">تصفح المنتجات، اختار المقاس واللون، زيد للسلة، ومن بعد صيفط الطلب عبر واتساب. الأداء الإلكتروني غير متوفر فهاد النسخة.</p></div><a href="#products" class="text-link"><span data-i18n="browseProducts">تصفح المنتجات</span> ↙</a></section>
+    <section class="promo section-wrap" id="about"><div class="promo-icon">RS<span>✳</span></div><div><p class="eyebrow"><span></span><span data-i18n="aboutLabel">علاش RAFIK STORE؟</span></p><h2 data-i18n="aboutTitle">ستايل واضح. طلب بسيط.</h2><p data-i18n="aboutCopy">تصفح المنتجات، اختار المقاس واللون، وكمل الطلب من الموقع. الأداء عند الاستلام، وغادي نتاصلوا بك هاتفياً لتأكيد الطلب.</p></div><a href="#products" class="text-link"><span data-i18n="browseProducts">تصفح المنتجات</span> ↙</a></section>
   </main>
 
   <footer class="footer"><a class="brand footer-brand" href="#home"><span class="brand-mark">R</span><span>RAFIK<span class="brand-light"> STORE</span><small>SPORT · STREET · STYLE</small></span></a><p data-i18n="footerText">الستايل ديالك، بطريقتك.</p><span>© <span id="year"></span> RAFIK STORE</span></footer>
@@ -53,19 +53,22 @@
 
   <div class="checkout-modal" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle" hidden>
     <div class="modal-head"><div><p class="eyebrow"><span></span><span data-i18n="almostDone">باقي غير خطوة</span></p><h2 id="checkoutTitle" data-i18n="checkoutTitle">معلومات التوصيل</h2></div><button class="icon-btn" id="checkoutClose" aria-label="Close checkout">✕</button></div>
-    <p class="modal-intro" data-i18n="checkoutIntro">دخل المعلومات ديالك باش نوجدو رسالة الطلب فواتساب.</p>
+    <p class="modal-intro" data-i18n="checkoutIntro">عمر المعلومات ديالك. غادي نراجعو الطلب ونتاصلو بك هاتفياً للتأكيد. الأداء عند الاستلام.</p>
     <form id="checkoutForm">
       <label for="customerName" data-i18n="nameLabel">الاسم الكامل</label><input id="customerName" name="name" autocomplete="name" required maxlength="80" placeholder="الاسم الكامل">
       <label for="customerPhone" data-i18n="phoneLabel">رقم الهاتف</label><input id="customerPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required maxlength="25" placeholder="06XXXXXXXX">
       <label for="customerCity" data-i18n="cityLabel">المدينة</label><input id="customerCity" name="city" autocomplete="address-level2" required maxlength="60" placeholder="الدار البيضاء">
       <label for="customerAddress" data-i18n="addressLabel">العنوان بالتفصيل</label><textarea id="customerAddress" name="address" autocomplete="street-address" required maxlength="250" rows="3" placeholder="الحي، الزنقة، رقم الدار..."></textarea>
-      <div class="checkout-summary"><span data-i18n="orderTotal">مجموع الطلب (الأثمنة تجريبية)</span><strong id="checkoutTotal">0 MAD</strong></div>
-      <button class="primary-btn full-btn" type="submit"><span data-i18n="sendWhatsApp">وجد الطلب فواتساب</span><span>↗</span></button>
+      <div class="checkout-summary"><span data-i18n="orderTotal">مجموع المنتجات (التوصيل يتأكد هاتفياً)</span><strong id="checkoutTotal">0 MAD</strong></div>
+      <div class="cod-note"><strong data-i18n="codTitle">طريقة الأداء: الدفع عند الاستلام</strong><p data-i18n="codCopy">ما كتخلص والو دابا. غادي نتاصلوا بك لتأكيد الطلب ومصاريف التوصيل.</p></div>
+      <label class="website-field" aria-hidden="true">Website<input name="website" id="websiteTrap" tabindex="-1" autocomplete="off"></label>
+      <button class="primary-btn full-btn" type="submit"><span data-i18n="placeOrder">تأكيد الطلب</span><span>↗</span></button>
       <p class="form-message" id="formMessage" role="status"></p>
-      <p class="privacy-note" data-i18n="privacyNote">ما كاين حتى أداء إلكتروني. غادي تراجع الطلب قبل التأكيد النهائي.</p>
+      <p class="privacy-note" data-i18n="privacyNote">الأداء عند الاستلام. الطلب غادي يتراجع وغادي نتاصلوا بك هاتفياً قبل الإرسال.</p>
     </form>
   </div>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <iframe name="orderSubmitFrame" id="orderSubmitFrame" title="order submission" class="hidden-submit-frame"></iframe>
   <script src="script.js"></script>
 </body>
 </html>
