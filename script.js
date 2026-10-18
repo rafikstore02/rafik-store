@@ -1,5 +1,5 @@
 /* RAFIK STORE — configure your Google Apps Script Web App URL below. */
-const ORDER_ENDPOINT = 'PASTE_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE';
+const ORDER_ENDPOINT = 'https://script.google.com/macros/s/AKfycbyS_moHNuF0n81aI3C20YLax1kLeLuG-qX124P4kYZbbkxV4k5i_6nl3iCL8r-rDOM5qA/exec';
 const products = [
   {id:1,category:'jerseys',name:{ar:'توني رياضي كلاسيكي',fr:'Maillot sport classique'},price:199,tag:{ar:'الأكثر طلباً',fr:'POPULAIRE'},image:'https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=800&q=80',emoji:'⚽',sizes:['S','M','L','XL'],colors:[{ar:'أخضر',fr:'Vert',hex:'#2f6b35'},{ar:'أسود',fr:'Noir',hex:'#20231f'}]},
   {id:2,category:'jerseys',name:{ar:'توني ستريت وير',fr:'Maillot streetwear'},price:249,tag:{ar:'إصدار جديد',fr:'NOUVEAU'},image:'https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=800&q=80',emoji:'👕',sizes:['S','M','L','XL'],colors:[{ar:'أبيض',fr:'Blanc',hex:'#f7f7f2'},{ar:'أسود',fr:'Noir',hex:'#20231f'}]},
